@@ -3,7 +3,7 @@ import type { NextComponentType, NextPageContext } from "next";
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
-import { VscGithubAlt } from "../Misc/Icons.collection";
+import { FaGithub } from "react-icons/fa6";
 
 import type { linkProps } from "../../@types/prop.types";
 
@@ -56,12 +56,11 @@ const Header: NextComponentType = () => {
         <TextLink text="Projects" url="#projects" />
         <TextLink text="Contact" url="#contact" />
       </p>
-
       <Link href="https://github.com/moh1t-do" className="float-right mr-2 rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2 sm:float-none sm:mr-0"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="github-repo">
-        <VscGithubAlt />
+        <FaGithub />
       </Link>
     </header>
   );
