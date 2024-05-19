@@ -6,6 +6,8 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
 } from "../Misc/Icons.collection";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FaSquareXTwitter, FaSquareInstagram } from "react-icons/fa6";
 
 import { Icon } from "../Misc/Icon.component";
 
@@ -15,18 +17,24 @@ const Contact: NextComponentType = () => {
       <p className="text-3xl font-bold text-blue-500">Get in touch</p>
 
       <div className="my-8 flex flex-row justify-center gap-x-4">
-        <Icon icon={<AiOutlineGithub />} url="https://github.com/kr-anurag" />
 
         <Icon
-          icon={<AiOutlineTwitter />}
-          url="https://twitter.com/imanuraglol"
+          icon={<AiOutlineLinkedin />}
+          url="https://www.linkedin.com/in/mohitd137/"
         />
 
-        <Icon icon={<MdEmail />} url="mailto:kr.anurag24@gmail.com" />
+        <Icon icon={<AiOutlineGithub />} url="https://github.com/moh1t-do" />
 
         <Icon
-          icon={<BsSpotify />}
-          url="https://open.spotify.com/user/31l2fev6wn2mtzclbpvzxis3x77q"
+          icon={<FaSquareXTwitter />}
+          url="https://x.com/mohitd137"
+        />
+
+        <Icon icon={<MdEmail />} url="mailto:mohitd2288@gmail.com" />
+
+        <Icon
+          icon={<FaSquareInstagram />}
+          url="https://www.instagram.com/_moh1t.do_/"
         />
       </div>
     </div>
