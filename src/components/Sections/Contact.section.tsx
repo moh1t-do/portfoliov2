@@ -1,11 +1,6 @@
 import type { NextComponentType } from "next";
 
-import {
-  BsSpotify,
-  MdEmail,
-  AiOutlineGithub,
-  AiOutlineTwitter,
-} from "../Misc/Icons.collection";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareXTwitter, FaSquareInstagram } from "react-icons/fa6";
 

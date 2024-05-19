@@ -1,5 +1,4 @@
-import { BsArrowRightShort } from "../Misc/Icons.collection";
-
+import { BsArrowRightShort } from "react-icons/bs";
 const Skills = () => {
   return (
     <div className="my-16 px-3 font-sen text-white" id="skills">
