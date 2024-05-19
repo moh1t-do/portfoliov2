@@ -1,4 +1,6 @@
+'use client'
 import type { NextComponentType, NextPageContext } from "next";
+import { useState, useEffect } from "react";
 
 import Link from "next/link";
 import { VscGithubAlt } from "../Misc/Icons.collection";
@@ -20,9 +22,32 @@ const TextLink: NextComponentType<NextPageContext, {}, linkProps> = ({
 };
 
 const Header: NextComponentType = () => {
+  const [showNav, handleShow] = useState('translate-y-0')
+  const [lastScrollY, setScrollY] = useState(0)
+
+  const controlNavbar = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > lastScrollY) {
+        handleShow('sm:-translate-y-40')
+      } else {
+        handleShow('sm:translate-y-0')
+      }
+    } else {
+      handleShow('sm:translate-y-0')
+    }
+    setScrollY(window.scrollY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [lastScrollY])
+
   return (
     <header
-      className={`font-jost py-8 sm:flex sm:flex-row sm:items-center sm:justify-between sticky top-0 md:backdrop-blur-sm`}
+      className={`font-jost py-8 sm:flex sm:flex-row sm:items-center sm:justify-between sticky top-0 sm:backdrop-blur-sm ${showNav} transition-transform duration-300`}
     >
       <p className="hidden sm:flex sm:flex-row sm:gap-x-2">
         <TextLink text="Home" url="#" />
