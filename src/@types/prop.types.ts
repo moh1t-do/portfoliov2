@@ -8,4 +8,13 @@ interface linkProps {
   url: string;
 }
 
-export type { iconProps, linkProps };
+interface workProps {
+  position: string;
+  company: string;
+  location: string;
+  type: string;
+  weblink: string;
+  duration: string;
+}
+
+export type { iconProps, linkProps, workProps };
