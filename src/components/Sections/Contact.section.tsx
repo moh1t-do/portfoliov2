@@ -6,7 +6,7 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
 } from "../Misc/Icons.collection";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareXTwitter, FaSquareInstagram } from "react-icons/fa6";
 
 import { Icon } from "../Misc/Icon.component";
@@ -19,11 +19,9 @@ const Contact: NextComponentType = () => {
       <div className="my-8 flex flex-row justify-center gap-x-4">
 
         <Icon
-          icon={<AiOutlineLinkedin />}
+          icon={<FaLinkedin />}
           url="https://www.linkedin.com/in/mohitd137/"
         />
-
-        <Icon icon={<AiOutlineGithub />} url="https://github.com/moh1t-do" />
 
         <Icon
           icon={<FaSquareXTwitter />}
