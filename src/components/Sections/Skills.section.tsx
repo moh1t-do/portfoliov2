@@ -38,8 +38,8 @@ const Skills = () => {
 
       <p className="text-lg font-medium text-slate-300">
         ...more skills include <span className="text-white">javascript</span>,{" "}
-        <span className="text-white">reactjs</span>,{" "}
-        <span className="text-white">fastapi </span>{" "}
+        <span className="text-white">python</span>,{" "}
+        <span className="text-white">reactjs</span>{" "}
       </p>
     </div>
   );
